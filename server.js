@@ -23,6 +23,7 @@ app.get('/api/products/:id', productController.getProductById);
 app.post('/api/products', productController.addProduct);
 app.put('/api/products/:id', productController.updateProduct);
 app.delete('/api/products/:id', productController.deleteProduct);
+app.delete('/api/products', productController.deleteProduct);
 
 // To search by product name
 app.get('/api/products?name=:kw', async (req, res) => {
